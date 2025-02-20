@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Correct way to append text to the end. Use innerText or textContent
+    document.getElementById("myDiv").textContent += "\nThis is new text."; 
+    //or
+    //document.getElementById("myDiv").innerText += "\nThis is new text."; 
+  </script>
+</body>
+</html>
